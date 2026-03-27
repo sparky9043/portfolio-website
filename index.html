@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>ALEX_DEV | Fullstack Developer</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#d4e4fa",
+            "on-tertiary-container": "#465468",
+            "on-secondary-fixed": "#324054",
+            "inverse-on-surface": "#565555",
+            "on-secondary": "#122133",
+            "on-tertiary-fixed-variant": "#505e73",
+            "surface-container-low": "#131313",
+            "background": "#0e0e0e",
+            "primary-dim": "#abbad0",
+            "on-primary-container": "#c2d2e8",
+            "secondary": "#909fb6",
+            "surface-dim": "#0e0e0e",
+            "on-primary-fixed-variant": "#4e5d6f",
+            "error-container": "#7f2927",
+            "tertiary-fixed-dim": "#cad8f0",
+            "surface-tint": "#b9c8de",
+            "surface-variant": "#252626",
+            "error-dim": "#bb5551",
+            "on-secondary-fixed-variant": "#4e5c71",
+            "outline-variant": "#484848",
+            "surface-container": "#191a1a",
+            "on-tertiary": "#4f5d71",
+            "tertiary-dim": "#cad8f0",
+            "on-secondary-container": "#b2c0d9",
+            "primary-fixed-dim": "#c6d6ec",
+            "on-surface": "#e7e5e5",
+            "error": "#ee7d77",
+            "on-surface-variant": "#acabaa",
+            "on-primary-fixed": "#324052",
+            "outline": "#767575",
+            "secondary-fixed-dim": "#c7d5ee",
+            "on-primary": "#334153",
+            "on-error-container": "#ff9993",
+            "inverse-primary": "#526073",
+            "primary-container": "#39485a",
+            "inverse-surface": "#fcf9f8",
+            "primary": "#b9c8de",
+            "surface-bright": "#2b2c2c",
+            "on-tertiary-fixed": "#344255",
+            "surface-container-highest": "#252626",
+            "surface-container-lowest": "#000000",
+            "on-error": "#490106",
+            "surface": "#0e0e0e",
+            "tertiary-fixed": "#d8e6ff",
+            "secondary-fixed": "#d5e3fd",
+            "tertiary-container": "#d8e6ff",
+            "surface-container-high": "#1f2020",
+            "tertiary": "#eff4ff",
+            "secondary-dim": "#909fb6",
+            "on-background": "#e7e5e5",
+            "secondary-container": "#2e3c50"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #e7e5e5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 2rem;
+    }
+  </style>
+</head>
+
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-md no-border bg-[#131313]">
+    <div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+      <div class="font-manrope font-bold text-xl tracking-tighter text-[#e7e5e5]">ALEX_DEV</div>
+      <div class="hidden md:flex gap-12 items-center">
+        <a class="font-manrope text-sm tracking-widest uppercase text-[#acabaa] hover:text-[#e7e5e5] transition-colors duration-300"
+          href="#work">Work</a>
+        <a class="font-manrope text-sm tracking-widest uppercase text-[#acabaa] hover:text-[#e7e5e5] transition-colors duration-300"
+          href="#about">About</a>
+        <a class="font-manrope text-sm tracking-widest uppercase text-[#acabaa] hover:text-[#e7e5e5] transition-colors duration-300"
+          href="#contact">Contact</a>
+      </div>
+      <a class="bg-primary text-on-primary px-6 py-2 rounded-md font-manrope text-sm tracking-widest uppercase hover:opacity-90 transition-all active:scale-95 duration-200"
+        href="#contact">Get in Touch</a>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 bg-surface">
+    <div class="max-w-4xl">
+      <span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Fullstack Systems
+        &amp; Interfaces</span>
+      <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
+        ALEX_DEV | Fullstack Developer creating efficient, clean web solutions.
+      </h1>
+      <div class="w-24 h-px bg-outline-variant/30 mx-auto mb-12"></div>
+      <p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        Architecting digital experiences through minimalist aesthetics and robust engineering. Specialized in building
+        scalable applications that prioritize performance and user intent.
+      </p>
+    </div>
+    <div class="mt-16 flex flex-col items-center">
+      <span class="material-symbols-outlined text-on-surface-variant animate-bounce">arrow_downward</span>
+    </div>
+  </header>
+  <!-- Featured Projects Section -->
+  <section class="py-32 px-6 md:px-12 bg-surface-container-low" id="work">
+    <div class="max-w-[1440px] mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div>
+          <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight text-on-surface mb-4">Featured Projects
+          </h2>
+          <p class="font-body text-on-surface-variant max-w-md">A selection of recent works focusing on high-performance
+            fullstack architectures.</p>
+        </div>
+        <div class="font-label text-xs tracking-widest text-outline uppercase pb-2">Selected Cases / 2023-2024</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
+        <!-- Project Card 1 -->
+        <div class="group">
+          <div class="relative overflow-hidden bg-surface-container mb-8 aspect-[4/3] rounded-lg">
+            <img alt="Code editor interface with clean dark theme"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+              data-alt="Sleek close-up of a high-resolution laptop screen displaying elegant React code with a dark editorial color palette"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVff-sDWlkgDCsGn6TX5kwP1iedUTPdQz72AAwqzSFDEcXiVsixxdoVOEcrg6pyH-Ifh2L9EvAF7TS7HRR6oRtbXhKiBQBTNuEA8fe8m3WEcrG2m47vUO-P5jCFxWhTazcUBsgV_bEyw_u-GIfdk1NRI-IfYIxW8-2E4osIcxwObVc0aBy_3VpxEO9UnkSjoi1bzdgziuSVe8ZQWebaxRDqc4HgYdvEAy2kRPh71wxEL_2ZXH_-fXy3p00LUaaKkLVT6oJx3atQ8G7" />
+            <div class="absolute top-6 left-6">
+              <span
+                class="bg-secondary-container/80 backdrop-blur-sm text-on-secondary-container px-3 py-1 text-[10px] tracking-widest uppercase font-bold rounded">Fintech</span>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h3 class="font-headline text-2xl font-bold text-on-surface">Vortex Finance API</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">A high-throughput financial dashboard built
+              with Next.js and Go, featuring real-time data streaming and custom visualization engines.</p>
+            <div class="pt-4">
+              <a class="inline-flex items-center gap-2 font-label text-sm tracking-widest uppercase text-primary hover:underline underline-offset-8 transition-all"
+                href="#">
+                View Code
+                <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="group md:mt-24">
+          <div class="relative overflow-hidden bg-surface-container mb-8 aspect-[4/3] rounded-lg">
+            <img alt="Data visualization charts on a dark background"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+              data-alt="Abstract UI dashboard with glowing data nodes and minimalist glassmorphism panels in slate and charcoal tones"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbyRG7XDo3GuXiFT3cGKDK1SGQbiFQ1UqM1VvU1ThoWslEvvRdE4e8HdXy2GjLamgvzUr2poLTx56inGzAQQ-M8gQpGKuGe7k69ytqIXw66pPgSn1G_CA6igv5p7_M6rXcmg6jpLc199Lnq32ALcn1dieqkyuzPrGDTuSS4IRUM2rbakClxLST2aW7IbWBa-gOCqaxwetxu-BHKMFCt014ygEbFMRHKhTYtQ-J3U-rQAaf3i4sCBE9cnIKP2ff7SwZiLbozvzFy3sj" />
+            <div class="absolute top-6 left-6">
+              <span
+                class="bg-secondary-container/80 backdrop-blur-sm text-on-secondary-container px-3 py-1 text-[10px] tracking-widest uppercase font-bold rounded">SaaS</span>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h3 class="font-headline text-2xl font-bold text-on-surface">Lumina CMS</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">Headless content management system optimized
+              for speed and editorial flexibility, utilizing PostgreSQL and Redis caching layers.</p>
+            <div class="pt-4">
+              <a class="inline-flex items-center gap-2 font-label text-sm tracking-widest uppercase text-primary hover:underline underline-offset-8 transition-all"
+                href="#">
+                View Code
+                <span class="material-symbols-outlined text-sm">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About / Contact Section (Asymmetric Hybrid) -->
+  <section class="py-32 px-6 md:px-12 bg-surface" id="contact">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+      <div id="about">
+        <h2 class="font-headline text-3xl font-bold text-on-surface mb-12">Building for the Modern Web</h2>
+        <div class="space-y-8 font-body text-on-surface-variant text-lg leading-relaxed">
+          <p>My philosophy centers on the rejection of bloat. I believe every line of code should serve a purpose, and
+            every pixel should respect the user's focus.</p>
+          <p>With a foundation in both architectural backend logic and precise frontend implementation, I bridge the gap
+            between complex data systems and intuitive user interfaces.</p>
+        </div>
+        <div class="mt-12 flex flex-wrap gap-4">
+          <span
+            class="px-4 py-2 border border-outline-variant/15 text-xs font-label uppercase tracking-widest text-on-surface-variant">TypeScript</span>
+          <span
+            class="px-4 py-2 border border-outline-variant/15 text-xs font-label uppercase tracking-widest text-on-surface-variant">Node.js</span>
+          <span
+            class="px-4 py-2 border border-outline-variant/15 text-xs font-label uppercase tracking-widest text-on-surface-variant">PostgreSQL</span>
+          <span
+            class="px-4 py-2 border border-outline-variant/15 text-xs font-label uppercase tracking-widest text-on-surface-variant">AWS</span>
+        </div>
+      </div>
+      <div class="bg-surface-container p-12 rounded-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-8 opacity-5">
+          <span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">send</span>
+        </div>
+        <h2 class="font-headline text-3xl font-bold text-on-surface mb-4">Get in Touch</h2>
+        <p class="font-body text-on-surface-variant mb-12">Have a project in mind or just want to chat about tech? Drop
+          me a line.</p>
+        <form class="space-y-8">
+          <div class="relative group">
+            <input
+              class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 focus:border-primary text-on-surface placeholder:text-outline transition-all"
+              placeholder="Name" type="text" />
+          </div>
+          <div class="relative group">
+            <input
+              class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 focus:border-primary text-on-surface placeholder:text-outline transition-all"
+              placeholder="Email" type="email" />
+          </div>
+          <div class="relative group">
+            <textarea
+              class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 focus:border-primary text-on-surface placeholder:text-outline transition-all resize-none"
+              placeholder="Message" rows="4"></textarea>
+          </div>
+          <button
+            class="w-full bg-primary text-on-primary py-4 rounded-md font-label text-sm tracking-[0.2em] uppercase font-bold hover:shadow-[0_0_20px_rgba(185,200,222,0.1)] transition-all"
+            type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="w-full py-24 border-t border-[#484848]/15 bg-[#0e0e0e] tonal-shift-bg-surface-container">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 gap-8 max-w-[1440px] mx-auto">
+      <div class="font-inter text-xs tracking-[0.2em] uppercase text-[#acabaa]">
+        © 2024 THE MONOLITHIC CURATOR
+      </div>
+      <div class="flex gap-12">
+        <a class="font-inter text-xs tracking-[0.2em] uppercase text-[#acabaa] hover:text-[#b9c8de] underline-offset-8 hover:underline transition-all duration-500 ease-out"
+          href="#">GitHub</a>
+        <a class="font-inter text-xs tracking-[0.2em] uppercase text-[#acabaa] hover:text-[#b9c8de] underline-offset-8 hover:underline transition-all duration-500 ease-out"
+          href="#">LinkedIn</a>
+        <a class="font-inter text-xs tracking-[0.2em] uppercase text-[#acabaa] hover:text-[#b9c8de] underline-offset-8 hover:underline transition-all duration-500 ease-out"
+          href="mailto:hello@alexdev.io">Email</a>
+      </div>
+      <div class="font-inter text-xs tracking-[0.2em] uppercase text-primary/40">
+        Crafted with Intent
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
